@@ -19,5 +19,11 @@ describe ('Player', function(){
     assert.strictEqual(actual, 'Michelle');
   });
 
+  it('should have an empty hand', function () {
+    const actual = player.hand;
+    assert.deepStrictEqual(actual, []);
+    assert.strictEqual(player.hand.length, 0);
+  }); //hiiii
+
 
 });
