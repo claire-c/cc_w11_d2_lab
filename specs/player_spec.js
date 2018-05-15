@@ -23,7 +23,12 @@ describe ('Player', function(){
     const actual = player.hand;
     assert.deepStrictEqual(actual, []);
     assert.strictEqual(player.hand.length, 0);
-  }); //hiiii
+  });
 
+  it('should add card to hand', function () {
+    player.addCard(card1)
+    const actual = player.hand.length;
+    assert.strictEqual(actual, 1);
+  });
 
 });
