@@ -14,4 +14,9 @@ describe('Card', function () {
     assert.strictEqual(actual, 'Superman');
   });
 
+  it('should have intelligence', function(){
+    const actual = card.intelligence;
+    assert.strictEqual(actual, 6);
+  });
+
 });
