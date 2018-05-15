@@ -8,11 +8,17 @@ describe ('Game', function(){
   let game;
   let player1;
   let player2;
+  let card1;
+  let card2;
+  let deck;
 
   beforeEach(function () {   //REMEMBER: ORDER MATTERS (AGAIN)
     player1 = new Player('Michelle');
     player2 = new Player('Claire');
-    game = new Game (player1, player2);
+    card1 = new Card('Superman', 6, 9, 7);
+    card2 = new Card('Batman', 7, 10, 5);
+    deck = [card1, card2];
+    game = new Game (player1, player2, deck);
 
   });
 
@@ -24,6 +30,11 @@ describe ('Game', function(){
   it('should get player2', function (){
     const actual = game.player2.name;
     assert.strictEqual(actual, 'Claire');
+  });
+
+  it('should have deck', function () {
+    const actual = game.deck;
+    assert
   });
 
   });
