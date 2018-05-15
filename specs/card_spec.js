@@ -22,6 +22,11 @@ describe('Card', function () {
   it('should have strength', function(){
     const actual = card.strength;
     assert.strictEqual(actual, 9);
-  })
+  });
+
+  it('should have agility', function(){
+    const actual = card.agility;
+    assert.strictEqual(actual, 7);
+  });
 
 });
