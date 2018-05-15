@@ -38,4 +38,11 @@ describe ('Player', function(){
     assert.strictEqual(actual, 2);
   });
 
+  it('should choose highest value from card', function(){
+    let deck = [card1, card2];
+    player.addHand(deck);
+    const actual = player.selectCategory();
+    assert.strictEqual(actual, 9);
+  });
+
 });
