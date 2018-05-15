@@ -31,4 +31,11 @@ describe ('Player', function(){
     assert.strictEqual(actual, 1);
   });
 
+  it('should add many cards to hand', function (){
+    let deck = [card1, card2];
+    player.addHand(deck);
+    const actual = player.hand.length;
+    assert.strictEqual(actual, 2);
+  });
+
 });
