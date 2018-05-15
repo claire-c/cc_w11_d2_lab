@@ -19,4 +19,9 @@ describe('Card', function () {
     assert.strictEqual(actual, 6);
   });
 
+  it('should have strength', function(){
+    const actual = card.strength;
+    assert.strictEqual(actual, 9);
+  })
+
 });
