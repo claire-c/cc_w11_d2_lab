@@ -33,8 +33,10 @@ describe ('Game', function(){
   });
 
   it('should have deck', function () {
-    const actual = game.deck;
-    assert
+    const actual = game.deck.length;
+    assert.strictEqual(actual, 2)
   });
+
+
 
   });
